@@ -26,9 +26,15 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(-10deg);
       -ms-transform: translateX(-50%) translateY(-50%) rotate(-10deg);
           transform: translateX(-50%) translateY(-50%) rotate(-10deg);
-  font-size: 500px;
+  font-size: 27vw;
   z-index: -1;
-  color: #8966e9;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5f11a7), to(#5a4bff));
+  background-image: -o-linear-gradient(left, #5f11a7 0%, #5a4bff 100%);
+  background-image: linear-gradient(90deg, #5f11a7 0%, #5a4bff 100%);
+  color: transparent;
+  opacity: 0.75;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 form {

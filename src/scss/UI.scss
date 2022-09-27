@@ -81,5 +81,11 @@ button{
             transform: translateY(-50%);
             font-size: 0.85rem;
         }
+
+        &:autofill ~ .placeholder{
+            top: 0;
+            transform: translateY(-50%);
+            font-size: 0.85rem;
+        }
     }
 }

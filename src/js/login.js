@@ -4,9 +4,6 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
     const formData = new FormData(form);
     Login(formData);
-    // if(formData.get("login").trim() && formData.get("password").trim()){
-    //     Login(formData);
-    // }
 })
 
 async function Login(formData){
@@ -14,4 +11,11 @@ async function Login(formData){
         method: "POST",
         body: formData
     });
+    if(req.ok){
+        const json = await req.json();
+        console.log(json);
+        if(json.status){
+            window.location.reload();
+        }
+    }
 }

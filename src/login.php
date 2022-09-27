@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 
 <!--PHP-->
-<!-- <?php
-    
-?> -->
+<?php
+   require_once $_SERVER['DOCUMENT_ROOT'] ."/phpFunctions/CheckToken.php";
+   
+   if(CheckToken()){
+    header("Location: /index.php");
+   }
+?>
 <!--\PHP-->
 
 <html lang="ru">

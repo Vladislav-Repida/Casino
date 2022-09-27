@@ -90,3 +90,18 @@ button:active {
           transform: translateY(-50%);
   font-size: 0.85rem;
 }
+
+.input-placeholder input:-webkit-autofill ~ .placeholder {
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.85rem;
+}
+
+.input-placeholder input:autofill ~ .placeholder {
+  top: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.85rem;
+}

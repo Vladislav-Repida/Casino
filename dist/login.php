@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 
 <!--PHP-->
-<!-- <?php
-    
-?> -->
+<?php
+   require_once $_SERVER['DOCUMENT_ROOT'] ."/phpFunctions/CheckToken.php";
+   
+   if(CheckToken()){
+    header("Location: /index.php");
+   }
+?>
 <!--\PHP-->
 
 <html lang="ru">
@@ -21,11 +25,11 @@
     <form action="">
         <h2 class="title">Вход</h2>
         <div class="input-placeholder">
-    <input type=text name=login placeholder=" ">
+    <input type=text name=login placeholder=" " autocomplete="off" required>
     <label for="" class="placeholder">Логин</label>
 </div>
         <div class="input-placeholder">
-    <input type=password name=password placeholder=" ">
+    <input type=password name=password placeholder=" " autocomplete="off" required>
     <label for="" class="placeholder">Пароль</label>
 </div>
         <button>Войти</button>

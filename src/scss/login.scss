@@ -25,10 +25,15 @@ body{
     left: 50%;
     top: 20%;
     transform: translateX(-50%) translateY(-50%) rotate(-10deg);
-    font-size: 500px;
+    font-size: 27vw;
 
     z-index: -1;
-    color: #8966e9;
+    //color: #8966e9;
+    background-image: linear-gradient(90deg, rgba(95,17,167,1) 0%, rgba(90,75,255,1) 100%);
+    color: transparent;
+    opacity: 0.75;
+
+    background-clip: text;
 }
 
 form{
