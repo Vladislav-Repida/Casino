@@ -1,1 +1,3 @@
 node_modules
+dist/phpFunctions/bd.php
+src/phpFunctions/bd.php

@@ -1,0 +1,68 @@
+@import "variables.scss";
+
+$obvodka: rgb(255, 255, 255);
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+
+    font-size: 2rem;
+
+    color: $dark--color;
+}
+
+.bg-title{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%) translateY(-50%) rotate(-10deg);
+    font-size: 500px;
+
+    z-index: -1;
+    color: #8966e9;
+}
+
+form{
+    margin: 20px 10px;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 40px 60px 40px 60px;
+    border-radius: 10px;
+
+    border: solid 2px #dadaeb;
+    
+    .input-placeholder{
+        width: 100%;
+        &:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
+    button{
+        width: 100%;
+        padding: 12px;
+
+        margin-top: 30px;
+    }
+    .create-account{
+        display: block;
+        font-size: 14px;
+        color: $light-gray-first--color;
+        text-align: center;
+        margin-top: 60px;
+
+        transition: .1s;
+
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}
